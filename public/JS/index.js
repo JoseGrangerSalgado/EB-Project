@@ -21,7 +21,7 @@ async function getProperty(id) {
 } 
 
 function createProperty(data){
-  window.location.href = "#image"
+  window.location.href = "#location"
   let id = document.getElementById("id");
   id.innerHTML = data['public_id'];
   let title = document.getElementById("title");
