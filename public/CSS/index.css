@@ -1,0 +1,68 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: black;
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+#main_title{
+    text-align: center;
+}
+#main_button{
+    margin: 0 auto;
+    display: block;
+}
+#main_description{
+    text-align: center;
+}
+
+header p{
+    font-size: 3vh;
+    color: white;
+}
+#contact-form{
+    display: none;
+}
+#Properties{
+    margin-left: auto;
+    margin-right: auto;
+}
+#page_number{
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+}
+td{
+    border: solid black .2vw;
+    margin: 0;
+    padding: 2%;
+    text-align: center;
+}
+.property{
+    text-align: center;
+}
+#image{
+    width:30%;
+    height:30%;
+}
+#description{
+    margin: 0;
+    padding: 2%;
+    
+}
+
+#title{
+    font-size: larger;
+}
+#contact-form{
+    text-align: center;
+}
+
+
+

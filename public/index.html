@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Easy Broker</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" href="../public/CSS/index.css">
+    </head>
+    <header>
+        <p id="head">Easy Broker Project - Made by Jose Granger Salgado</p>
+    </header>
+    <body>
+      <h1 id="main_title">Welcome to the Property Browser</h1>
+      <h3 id="main_description">Click on the Public ID of a property to see more info and display contact form</h3>
+      <button id="main_button" onclick="getProperties()">Click here to get a list of available properties/go to the next page</button>
+      <div class="main_table">
+        <h4 id="page_number"></h4>
+        <table id="Properties"></table>
+      </div>
+      <div class="property">
+        <p id="id"></p>
+        <p id="title"></p>
+        <p id="description"></p>
+        <img id="image"></img>
+        <p id="type"></p>
+        <p id ="location"></p>
+      </div>
+      <form id="contact-form" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="name" name="name" value=""><br>
+        <label for="lname">Phone:</label><br>
+        <input type="text" id="phone" name="phone" value=""><br>
+        <label for="lname">Email:</label><br>
+        <input type="text" id="email" name="email" value=""><br>
+        <label for="lname">Message:</label><br>
+        <input type="text" id="message" name="message" value=""><br><br>
+        <input type="submit" value="Submit">
+      </form>
+        <script src="../public/JS/index.js"></script>
+    </body>
+</html>
