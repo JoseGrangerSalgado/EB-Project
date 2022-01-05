@@ -82,9 +82,6 @@ app.post("/public/Contact/:id",(req, res) =>
     "source": "testing.com"
   })
 
-  console.log(info);
-  console.log(req.body.fname);
-
   const options = {
     hostname: 'api.stagingeb.com',
     path: `/v1/contact_requests`,
@@ -105,7 +102,6 @@ app.post("/public/Contact/:id",(req, res) =>
   resp.on('end', () => {
     console.log('Response ended: ');
     const properties = JSON.parse(Buffer.concat(data).toString());
-    console.log(properties)
   res.redirect('/public');
   });
 	}).on('error', err => {
