@@ -1,8 +1,10 @@
+const {keys} = require('./apiKeys.js');
+
 const express = require("express");
 const app = express();	
 const port = process.env.PORT || 3000;
 const path = require("path");
-const apiKey = 'l7u502p8v46ba3ppgvj5y2aad50lb9'; //Change Placement
+const apiKey = keys.EB;
 const https = require('https');
 
 app.use(express.json());
